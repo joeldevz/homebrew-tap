@@ -1,26 +1,26 @@
 class Neurox < Formula
   desc "Persistent memory for AI coding agents — brain-inspired, local-first"
   homepage "https://github.com/joeldevz/neurox"
-  version "0.5.1"
+  version "0.5.2"
   license "BSL-1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/joeldevz/neurox/releases/download/v0.5.1/neurox_0.5.1_darwin_arm64.tar.gz"
-      sha256 "d2c97130a1e045f0adbfd55618cc8c26fa415ed82fc7040e3ad74a30166011f9"
+      url "https://github.com/joeldevz/neurox/releases/download/v0.5.2/neurox_0.5.2_darwin_arm64.tar.gz"
+      sha256 "ba9798edef5eed408e0ea7e97810f1c5ef02210e476d1020bbd4359c93406bef"
     else
-      url "https://github.com/joeldevz/neurox/releases/download/v0.5.1/neurox_0.5.1_darwin_amd64.tar.gz"
-      sha256 "4b557a46503c20a680093c92b92f44e17ef2c09bacf41f8e0ba84b5e9cd6dbdf"
+      url "https://github.com/joeldevz/neurox/releases/download/v0.5.2/neurox_0.5.2_darwin_amd64.tar.gz"
+      sha256 "568de635e21f3df3c5f502e8f270018dd7ffcf6e5ae00b1e81b1fe2201e91fc4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/joeldevz/neurox/releases/download/v0.5.1/neurox_0.5.1_linux_arm64.tar.gz"
-      sha256 "24fccf98bb51e8e708415dabbcf9ce4e1c9b43a72c9a21da9076a42f58eec7b9"
+      url "https://github.com/joeldevz/neurox/releases/download/v0.5.2/neurox_0.5.2_linux_arm64.tar.gz"
+      sha256 "0ad2d67c37082b67e2ad6fcb4a7cd815aa75b1887fe3ad8b5b6f76ec495ee452"
     else
-      url "https://github.com/joeldevz/neurox/releases/download/v0.5.1/neurox_0.5.1_linux_amd64.tar.gz"
-      sha256 "2e240fa01a71d984536165b4fee0af940bbfcf5de6f6980edcab0f1cbf1e2ea8"
+      url "https://github.com/joeldevz/neurox/releases/download/v0.5.2/neurox_0.5.2_linux_amd64.tar.gz"
+      sha256 "d0fe0aa1306e87d32c881c937ea8ebb2efd171307c36ccd4867f2df8809a4922"
     end
   end
 
