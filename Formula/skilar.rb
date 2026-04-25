@@ -5,21 +5,21 @@
 class Skilar < Formula
   desc "AI agent skills installer for OpenCode and Claude Code"
   homepage "https://github.com/joeldevz/skilar"
-  version "1.0.7"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joeldevz/skilar/releases/download/v1.0.7/skilar_1.0.7_darwin_amd64.tar.gz"
-      sha256 "4af7581c9180164010fae03869d5727b3c328e85f58fddc0a886e8c8423b3627"
+      url "https://github.com/joeldevz/skilar/releases/download/v1.1.0/skilar_1.1.0_darwin_amd64.tar.gz"
+      sha256 "698419067f149de502548fa3535c96f5e7e5d9a700b8efc0ed57b1cdb717c1af"
 
       define_method(:install) do
         bin.install "skilar"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joeldevz/skilar/releases/download/v1.0.7/skilar_1.0.7_darwin_arm64.tar.gz"
-      sha256 "4f112aa2d2711a088f4c4655e256301a3f1d92129a39b8a2a7b141f04a8a5a8d"
+      url "https://github.com/joeldevz/skilar/releases/download/v1.1.0/skilar_1.1.0_darwin_arm64.tar.gz"
+      sha256 "d50d0014295e9b3d48b62539e14f88f8d69251f1ff08da307691aa520429a8d7"
 
       define_method(:install) do
         bin.install "skilar"
@@ -29,15 +29,15 @@ class Skilar < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joeldevz/skilar/releases/download/v1.0.7/skilar_1.0.7_linux_amd64.tar.gz"
-      sha256 "1fc773f4c270f5bbb960ce2f1f43b87980757461a4efd0355003dae8fd9a7154"
+      url "https://github.com/joeldevz/skilar/releases/download/v1.1.0/skilar_1.1.0_linux_amd64.tar.gz"
+      sha256 "cfbc92a1ca6c1bd5e596836b16cd317bab956bf24b7cd773a35304275078ac33"
       define_method(:install) do
         bin.install "skilar"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joeldevz/skilar/releases/download/v1.0.7/skilar_1.0.7_linux_arm64.tar.gz"
-      sha256 "2909ae187dd76ad3c216a53229e85219e61fadc30fc8ade9dff2b8b931610ae9"
+      url "https://github.com/joeldevz/skilar/releases/download/v1.1.0/skilar_1.1.0_linux_arm64.tar.gz"
+      sha256 "07148ad3fe5ce56f58f0f2475f35f89775557535ce6f6e406292d2f7b1ce0d66"
       define_method(:install) do
         bin.install "skilar"
       end
