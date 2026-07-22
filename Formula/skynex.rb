@@ -5,21 +5,21 @@
 class Skynex < Formula
   desc "AI agent skills installer for OpenCode and Claude Code"
   homepage "https://github.com/joeldevz/skynex"
-  version "1.10.0"
+  version "1.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joeldevz/skynex/releases/download/v1.10.0/skynex_1.10.0_darwin_amd64.tar.gz"
-      sha256 "81fa7d17b57687ebe051906ae3c1b5ff194891d794cdffaf85d995cfe2a54bf8"
+      url "https://github.com/joeldevz/skynex/releases/download/v1.11.0/skynex_1.11.0_darwin_amd64.tar.gz"
+      sha256 "fe1802f8f9ac65474349494c520920751cb362eeb3486f5b7273ba770f3ae109"
 
       define_method(:install) do
         bin.install "skynex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joeldevz/skynex/releases/download/v1.10.0/skynex_1.10.0_darwin_arm64.tar.gz"
-      sha256 "3c5c4c4e7d7c31058a809a4844d08b309fbd2ad8b73229cd0fb487e200e00f39"
+      url "https://github.com/joeldevz/skynex/releases/download/v1.11.0/skynex_1.11.0_darwin_arm64.tar.gz"
+      sha256 "433a3cca38d0bdd020133a003c367afe5be8ebb43b1e80e65ec6a938d6f9d358"
 
       define_method(:install) do
         bin.install "skynex"
@@ -29,15 +29,15 @@ class Skynex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joeldevz/skynex/releases/download/v1.10.0/skynex_1.10.0_linux_amd64.tar.gz"
-      sha256 "e42beb05591c14da3151e56cc9a3676d0b05a3954a03ce10017b3d2b43afed01"
+      url "https://github.com/joeldevz/skynex/releases/download/v1.11.0/skynex_1.11.0_linux_amd64.tar.gz"
+      sha256 "869675fab342a554ec2acf5f462565a0077d05d41148497a000a6c347e047442"
       define_method(:install) do
         bin.install "skynex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joeldevz/skynex/releases/download/v1.10.0/skynex_1.10.0_linux_arm64.tar.gz"
-      sha256 "8cac955bc3c13ce22a4adc6a042fb8e1c58ef513a206775f48586fc00628814b"
+      url "https://github.com/joeldevz/skynex/releases/download/v1.11.0/skynex_1.11.0_linux_arm64.tar.gz"
+      sha256 "6109b7c17f2ef3960357af2dfad6e3d11f3bba8e9834744590fad0817045e8e7"
       define_method(:install) do
         bin.install "skynex"
       end
